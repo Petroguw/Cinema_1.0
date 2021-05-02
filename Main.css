@@ -36,6 +36,26 @@ input {
 input[type=text]{
 	width: 80%;
 }
+.slider_wrapper {
+    position: relative;
+}
+.slider_films {
+    margin-left: -.875rem;
+    margin-right: -.875rem;
+}
+
+.slider_films_item {
+    position: relative;
+    margin-left: .875rem;
+    margin-right: .875rem;
+    border-top-left-radius: .25rem;
+}
+
+.slider_films_item img {
+    width: 100%;
+    border-radius: .25rem;
+}
+
 .inputmes {
 	width: 80%;
 	border-radius: 5px;

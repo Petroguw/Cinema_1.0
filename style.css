@@ -1,0 +1,231 @@
+*{
+	margin: 0;
+	padding: 0;
+}	
+body{
+	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+		url(aot.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.logo{
+	width:150px;
+	margin-top: 18px;
+}
+.movie-details{
+	margin: 3% 0;
+
+}
+.left-box{
+	color:white;
+}
+.left-box a{
+	text-decoration: none:important;
+	border-radius: 30px;
+	padding: 7px 10px;
+	margin-top: 35px;
+	color: #fff: important;
+	background: blue;
+	font-weight: 600;
+	display: inline-block;
+	margin-right: 10px;
+}
+.fa{
+	margin: 0 5pxx;
+}
+.movie-img{
+	height:350px;
+	box-shadow:-4px 4px 5;
+}
+.caru{
+  height: 50vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.carousel {
+  height: 250px;
+  width: 80%;
+  position: relative;
+
+}
+.carousel .switchLeft,
+.carousel .switchRight {
+  color: white;
+  font-weight: bold;
+  height: 100%;
+  width: 45px;
+  line-height: 250px;
+  font-size: 25px;
+  text-align: center;
+  background-color: purple;
+  font-family: sans-serif;
+  top: 0;
+  z-index: 3;
+}
+
+.carousel .switchLeft {
+  position: absolute;
+  left: -50px;
+}
+
+.carousel .switchRight {
+  position: absolute;
+
+  right: -50px;
+}
+
+.carouselbox {
+  height: 250px;
+  width: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  text-align: center;
+  padding-bottom: 10px !important;
+  display: flex;
+  align-items: center;
+}
+
+.carouselbox img {
+  min-width: 147px;
+  max-width: 147px;
+  height: 200px;
+  background-size: cover;
+  background-color: lightgreen;
+  margin: 5px 10px;
+  cursor: pointer;
+  transition: 0.5s ease;
+  z-index: 2;
+
+  /* margin: 15px; */
+}
+
+.carouselbox img:hover {
+  transform: scale(1.4);
+  z-index: 5;
+}
+footer{
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+footer ul li{
+	display: flex;
+	justify-content: space-between;
+}
+footer ul li a img{
+	max-height: 70px;
+}
+hr {
+  border-top: 3px solid #37003c;
+}
+.footer{
+	background-color: #37003c;
+}
+button {
+  background: none!important;
+  border: none;
+  padding: 0!important;
+  /*optional*/
+  font-family: arial, sans-serif;
+  /*input has OS specific font-family*/
+  color: #069;
+  text-decoration: underline;
+  cursor: pointer;
+}
+input {
+	border: none;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px;
+}
+input[type=text]{
+	width: 80%;
+}
+
+
+.inputmes {
+	width: 80%;
+	border-radius: 5px;
+	border: none;
+	padding-bottom: 20%;
+}
+input[type=submit] {
+	width: 100%;
+	color: #475160;
+}
+.header3 {
+	padding: 10px;
+}
+h2, .footer p{
+	color: white;
+}
+.header3 {
+	text-align: center;
+	color: white;
+}
+.article1 {
+	display: grid;
+	grid-column: 1/2;
+	justify-items: center;
+}
+.article2{
+	padding-top: 40px;
+}
+section {
+	display: grid;
+	grid-template-areas: 
+	'article1 article2 clubs';
+}
+.clubs{
+	color: white;
+}
+.clubs ul{
+	padding: 0;
+	list-style: none;
+}
+.clubs a{
+	color: white;
+}
+.jumbotron-fluid {
+	color: white;
+}
+@media(max-width: 1200px){
+	section{
+		grid-template-areas: 
+		'article1'
+		'article2'
+		'clubs';
+	}
+	.article2{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.clubs h3{
+		display: flex;
+		justify-content: center;
+	}
+	.clubs li{
+		margin: 5px;
+	}
+	.clubs ul{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+}

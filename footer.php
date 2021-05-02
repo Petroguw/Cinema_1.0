@@ -80,7 +80,8 @@
 				</ul>
 			</div>
 			<div class="col-lg-3 d-flex justify-content-center">
-				<a href="Main.php"><img src="" alt="phoneicon" class="navbar-brand" style="width: 100px;"></a>
+				<a href="Main.php"><img src="logo.jpg" width="60" 
+        height="60" alt="hi" title="next page"></a>
 			</div>
 		</div>
 	</div>

@@ -1,10 +1,11 @@
 <link rel="stylesheet" href="Main.css">
 <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #37003c">
-		<a href="Main.php"><img src="" alt="phoneicon" class="navbar-brand" style="width: 100px;"></a>
+		<a href="Main.php">		<img src="logo.jpg" width="80" 
+        height="80" alt="hi" title="next page"></a>
 		<div class="">
 			<ul class="navbar-nav">
 					<li class="nav-item px-3">
-						<a href="#" class="nav-link">TEXT_TEXT_TEXT</a>
+						<a href="#" class="nav-link">Nur-Sultan</a>
 					</li>
 			   </ul>
 		</div>
@@ -14,22 +15,22 @@
 		<div class="collapse navbar-collapse w-100 justify-content-end" id="navbarMenu">
 			<div class="dropdown">
 				<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					TEXT_TEXT_TEXT
+					Cinema
 				</a>
 
 				<div class="dropdown-menu drop" aria-labelledby="dropdownMenuLink" style="background-color: #37003c">
-					<a class="dropdown-item" style="color: #0086ff" href="Main.php">TEXT</a>
-					<a class="dropdown-item" style="color: #0086ff" href="#">TEXT</a>
-					<a class="dropdown-item" style="color: #0086ff" href="#">TEXT</a>
+					<a class="dropdown-item" style="color: #0086ff" href="Main.php">Main</a>
+					<a class="dropdown-item" style="color: #0086ff" href="films.php">Films</a>
+					<a class="dropdown-item" style="color: #0086ff" href="#">booking</a>
 				</div>
 			</div>
 			<div>
 			   <ul class="navbar-nav">
 					<li class="nav-item mx-2">
-						<a href="#" class="nav-link">TEXT</a>
+						<a href="#" class="nav-link">Login</a>
 					</li>
 					<li class="nav-item mx-2">
-						<a href="#" target="_blank" class="nav-link">TEXT</a>
+						<a href="#" target="_blank" class="nav-link">Contacts</a>
 					</li>
 			   </ul>
 			</div>

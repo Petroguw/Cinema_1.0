@@ -27,14 +27,18 @@
 			  </ol>
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
-			      <img class="d-block w-100" src="" alt="First slide">
+			      <img class="d-block w-100" src="https://media.kg-portal.ru/anime/a/attackmovie2/posters/attackmovie2_2.jpg" style="width:80%;" alt="First slide">
 			    </div>
 			    <div class="carousel-item">
-			      <img class="d-block w-100" src="" alt="Second slide">
+			      <img class="d-block w-100" src="https://kino-teatr.ua/public/main/films/poster_4b225d15ba264.jpg" style="width:80%;" alt="Second slide">
 			    </div>
 			    <div class="carousel-item">
-			      <img class="d-block w-100" src="" alt="Third slide">
+			      <img class="d-block w-100" src="https://cs5.pikabu.ru/post_img/big/2015/04/02/8/1427981421_1156913712.jpg" style="width:80%;" alt="Third slide">
 			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="https://i.playground.ru/p/fLYWE5JDkeMTwe1nrieBnQ.jpeg" style="width:80%;" alt="Third slide">
+			    </div>
+			    
 			  </div>
 			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
 			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -58,21 +62,21 @@
 		<div class="col-lg-4">
 			<div class="jumbotron jumbotron-fluid" style="margin: 20px; background-color: #37003c;">
 				<div class="container" >
-					<h1 class="display-4 text-center"><a href="News.php">TEXT</a></h1>
+					<h1 class="display-4 text-center"><a href="films.php">Фильмы этой недели</a></h1>
 					<h4>22 Sep, 10:00</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Бегущий по лезвию</p>
 					<h4>21 Sep, 20:00</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Атака титанов</p>
 					<h4>26 Jul, 12:30</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Чернобль</p>
 					<h4>20 Jul, 14:30</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Годзилла VS Конг</p>
 					<h4>17 Jul, 22:00</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Маша и медведь</p>
 					<h4>14 Jul, 13:34</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Ограбление по русски</p>
 					<h4>29 Jun, 12:30</h4>
-					<p class="lead">TEXT_TEXT_TEXT</p>
+					<p class="lead">Мэтью и команда</p>
 				</div>
 			</div>
 		</div>
