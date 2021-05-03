@@ -27,7 +27,7 @@
 			<div>
 			   <ul class="navbar-nav">
 					<li class="nav-item mx-2">
-						<a href="#" class="nav-link">Login</a>
+						<a href="login.php" class="nav-link">Login</a>
 					</li>
 					<li class="nav-item mx-2">
 						<a href="#" target="_blank" class="nav-link">Contacts</a>
