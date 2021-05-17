@@ -17,17 +17,16 @@
 				<a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 					Cinema
 				</a>
-
 				<div class="dropdown-menu drop" aria-labelledby="dropdownMenuLink" style="background-color: #37003c">
 					<a class="dropdown-item" style="color: #0086ff" href="Main.php">Main</a>
 					<a class="dropdown-item" style="color: #0086ff" href="films.php">Films</a>
-					<a class="dropdown-item" style="color: #0086ff" href="booking.php">booking</a>
+					<a class="dropdown-item" style="color: #0086ff" href="#">booking</a>
 				</div>
 			</div>
 			<div>
 			   <ul class="navbar-nav">
 					<li class="nav-item mx-2">
-						<a href="login.php" class="nav-link">Login</a>
+						<a href="login.php" class="nav-link">Profile</a>
 					</li>
 					<li class="nav-item mx-2">
 						<a href="#" target="_blank" class="nav-link">Contacts</a>
