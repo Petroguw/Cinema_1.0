@@ -100,6 +100,13 @@ form .content label{
 form .content .pass-link{
   color: "";
 }
+form .msg{
+  border: 2px solid #ffa908;
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+}
 form .field input[type="submit"]{
   color: #fff;
   border: none;
