@@ -1,3 +1,10 @@
+<?php
+    session_start();
+    if(isset($_SESSION['user'])){
+        header('Location: ../CodingLab/profile.php');
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Cinema</title>
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="signup.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
     <style>
@@ -15,40 +22,46 @@
 
 <body>
     <?php
-    require 'header.php'
+        require 'header.php'
     ?>
 	
     <div class="block">
     <div class="wrapper">
-      <div class="title">
-Login</div>
-<form action="#">
-        <div class="field">
-          <input type="text" required>
-          <label>Email Address</label>
-        </div>
-<div class="field">
-          <input type="password" required>
-          <label>Password</label>
-        </div>
-<div class="content">
-          <div class="checkbox">
-            <input type="checkbox" id="remember-me">
-            <label for="remember-me">Remember me</label>
-          </div>
-<div class="pass-link">
-<a href="#">Forgot password?</a></div>
-</div>
-<div class="field">
-          <input type="submit" value="Login">
-        </div>
-<div class="signup-link">
-Not a member? <a href="signup.php">Signup now</a></div>
-</form>
-</div>
-</div>
+        <div class="title">Login</div>
+            <form action="loginCheck.php" method="post">
+                <div class="field">
+                    <input type="text" name="login" required>
+                    <label>Login</label>
+                </div>
+                <div class="field">
+                    <input type="password" name="password" required>
+                    <label>Password</label>
+                </div>
+                <div class="content">
 
+                </div>
+                <div class="field">
+                    <input type="submit" value="Login">
+                </div>
+                <div class="signup-link">
+                    Not a member? <a href="signup.php">Signup now</a>
+                </div>
+                <?php 
+                    if(isset($_SESSION['message'])){
+                        echo '<p class="msg"> ' . $_SESSION['message'] .' </p>';
+                    }
+                    unset($_SESSION['message']);
+                ?>
+            </form>
+    </div>
+    </div>
 
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
