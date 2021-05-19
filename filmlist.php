@@ -49,6 +49,21 @@ $resultArr= getProducts();
 			        <b>Duration:</b> 28 min.<br><br>
 
 			</div>
+							<?php
+				$sql = "SELECT mname, description, year, genre FROM movies";
+				$result = $conn->query($sql);
+				if ($result->num_rows > 0) {
+					echo "<table>";
+				while($row = $result->fetch_assoc()) {
+				echo "<tr><td>" . $row["mname"]. "</td></tr>";
+				echo "<tr><td>" . "Description:". "</td><td><td>" . $row["description"] . "</td></tr>";
+				echo "<tr><td>" . "Year:". "</td><td><td>". $row["year"]. "</td></tr>";
+				echo "<tr><td>" . "Genre:". "</td><td><td>". $row["genre"]. "</td></tr>";
+				}
+				echo "</table>";
+				} else { echo "0 results"; }
+				$conn->close();
+				?>
 
 			<div class="quote">			         
 			   <center> Просмотров: 1 394 | <a href="#">Комментариев: 0</a> |  </center>  
@@ -56,45 +71,7 @@ $resultArr= getProducts();
 			</div>
 			</div>
 				</div>
-	<?php
-		$sql = "SELECT id, mname, description, year, genre FROM movies";
-		$result = $conn->query($sql);
-		echo '<table >';
-		echo '<tr>';
-		        echo "<th>mname</th>";
-		        echo "<th>description</th>";
-		        echo "<th>year</th>";
-		        echo "<th>genre</th>";
-		echo '</tr>';
 
-		while($row = mysqli_fetch_array($result))
-		{
-		    echo "<tr>";
-
-		        echo "<td>" . $row['mname'] . "</td>";
-		        echo "<td>" . $row['description'] . "</td>";
-		        echo "<td>" . $row['year'] . "</td>";
-		        echo "<td>" . $row['genre'] . "</td>";
-		        echo '<td><a href="'.'update.php?productid='.$row['productid'].'">Update</a></td>';
-		        echo '<td><a href="'.'delete.php?productid='.$row['productid'].'">Delete</a></td>';
-		        // echo '<td><a href="'.'delete.php?productid='.$row['productid'].'>Delete</a></td>';
-		        // echo "<td><a href='delete.php?productid=".$row['ProductID']."'>Delete</a></td>";
-		        //  echo "<td><a href='delete.php?productid=".$row['ProductID']."'>Delete</a></td>";
-		    echo "</tr>";
-
-		}
-		 
-		// foreach ($result as $key => $row) {
-		//     foreach ($row as $k => $r) {
-		//         echo "<tr>";
-		//         echo "<td>$k</td>"; // Get index.
-		//         echo "<td>$</td>"; // Get value.
-		//         echo "</tr>";
-		//     }
-		// }
-
-		echo '</table>';
-		?>
 	<?php
 	require 'footer.php'
 	?>
