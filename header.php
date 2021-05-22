@@ -1,5 +1,6 @@
 <?php
 include('config.php');
+session_start();
 
 ?>
 <link rel="stylesheet" href="Main.css">
@@ -31,6 +32,9 @@ include('config.php');
             <div>
                <ul class="navbar-nav">
                     <li class="nav-item mx-2">
+                        <a href="login.php" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item mx-2">
                         <a href="#" target="_blank" class="nav-link">Contacts</a>
                     </li>
                </ul>
@@ -38,6 +42,7 @@ include('config.php');
         
 			  <div class="nav-wrap">
 					<ul class="group" id="example-one">
+
 
 			  		   <li><?php if(isset($_SESSION['user'])){
 			  		   $us=mysqli_query($con,"select * from tbl_registration where user_id='".$_SESSION['user']."'");
