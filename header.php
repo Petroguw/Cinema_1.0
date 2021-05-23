@@ -25,8 +25,8 @@ session_start();
                 </a>
                 <div class="dropdown-menu drop" aria-labelledby="dropdownMenuLink" style="background-color: #37003c">
                     <a class="dropdown-item" style="color: #0086ff" href="Main.php">Main</a>
-                    <a class="dropdown-item" style="color: #0086ff" href="filmlist.php">Films</a>
-                    <a class="dropdown-item" style="color: #0086ff" href="booking.php">booking</a>
+                    <a class="dropdown-item" style="color: #0086ff" href="index.php">Films</a>
+
                 </div>
             </div>
             <div>
