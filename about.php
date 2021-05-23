@@ -34,8 +34,8 @@ if(!isset($_SESSION['user']))
 			<h3><?php echo $movie['movie_name']; ?></h3>
 					<div class="desc span_3_of_2">
 						<p style="font-size:15px"><?php echo $movie['desc']; ?></p>
-						<p class="p-link" style="font-size:15px"><h5>Jenre :</h5> <?php echo $movie['cast']; ?></p>
-						<p class="p-link" style="font-size:15px"><h5>Relece Date :</h5> <?php echo date('d-M-Y',strtotime($movie['release_date'])); ?></p>
+						<p class="p-link" style="font-size:15px"><h5>Genre :</h5> <?php echo $movie['cast']; ?></p>
+						<p class="p-link" style="font-size:15px"><h5>Relise Date :</h5> <?php echo date('d-M-Y',strtotime($movie['release_date'])); ?></p>
 						<a href="<?php echo $movie['video_url']; ?>" target="_blank" class="watch_but">Watch Trailer</a>
 					</div>
 						<div class="clear"></div>
@@ -62,10 +62,9 @@ if(!isset($_SESSION['user']))
 				while($shh=mysqli_fetch_array($tr))
 											{
 				$ttm=mysqli_query($con,"select  * from tbl_show_time where st_id='".$shh['st_id']."'");
-												$ttme=mysqli_fetch_array($ttm);
+				$ttme=mysqli_fetch_array($ttm);
 												
 												?>
-												
 												<a href="check_login.php?show=<?php echo $shh['s_id'];?>&movie=<?php echo $shh['movie_id'];?>&theatre=<?php echo $shw['theatre_id'];?>"><button class="btn btn-default"><?php echo date('h:i A',strtotime($ttme['start_time']));?></button></a>
 												<?php
 											}
