@@ -1,58 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+include('config.php');
+session_start();
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cinema</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.csss">
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
-    <style>
-    </style>
-</head>
-
+?>
+<link rel="stylesheet" href="Main.css">
+<nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #37003c">
+        <a href="Main.php">     <img src="logo.jpg" width="80" 
+        height="80" alt="hi" title="next page"></a>
+        <div class="">
+            <ul class="navbar-nav">
+                    <li class="nav-item px-3">
+                        <a href="#" class="nav-link">Nur-Sultan</a>
+                    </li>
+               </ul>
+        </div>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+           <span class="navbar-toggler-icon"></span>
+        </button>
 <body>
-	<?php
-	require 'header.php'
-	?>
-	<div class="container movie-details">
-		<div class="row">
-			<div class="col-md-6 left-box">
-				<h1>Attak On Titan</h1>
-				<p>Attack on Titan (Japanese: 進撃の巨人, Hepburn: Shingeki no Kyojin) is a Japanese dark fantasy anime television series adapted from the manga of the same name by Hajime Isayama that premiered on April 7, 2013. </p>
-				<p id="demo" style="display:none">It used to air on NHK General TV in Japan,[e] Aniplus Asia in various Asia-Pacific countries,[f] and Crunchyroll, Funimation, Prime Video, and Hulu in Canada and the United States.</p>
-				<h5>Year:</h5>
-				<h5>Jenre:</h5>
+        <div class="collapse navbar-collapse w-100 justify-content-end" id="navbarMenu">
+            <div class="dropdown">
+                <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Cinema
+                </a>
+                <div class="dropdown-menu drop" aria-labelledby="dropdownMenuLink" style="background-color: #37003c">
+                    <a class="dropdown-item" style="color: #0086ff" href="Main.php">Main</a>
+                    <a class="dropdown-item" style="color: #0086ff" href="filmlist.php">Films</a>
+                    <a class="dropdown-item" style="color: #0086ff" href="booking.php">booking</a>
+                </div>
+            </div>
+            <div>
+               <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a href="login.php" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="#" target="_blank" class="nav-link">Contacts</a>
+                    </li>
+               </ul>
+            </div>
+        
+			  <div class="nav-wrap">
+					<ul class="group" id="example-one">
 
-				<button type="button" onclick="document.getElementById('demo').style.display='block'">continue reading</button></br>
-				<a href="#"><i calss="fa fa-play"></i>Watch Trailer</a>
-			</div>
-			<div class="col-md-6 text-center">
-				<img src="aot.jpg" class="movie-img">
-			</div>
-		</div>
-	</div>
-	<div class="container caru">
-    <div class="carousel">
-      <div class="carouselbox">
- 
-      </div>
 
-      <a class="switchLeft sliderButton" onclick="sliderScrollLeft()"><</a>
-      <a class="switchRight sliderButton" onclick="sliderScrollRight()">></a>
-    </div>
-	</div>
+			  		   <li><?php if(isset($_SESSION['user'])){
+			  		   $us=mysqli_query($con,"select * from tbl_registration where user_id='".$_SESSION['user']."'");
+        $user=mysqli_fetch_array($us);?><a href="profile.php"><?php echo $user['name'];?></a><a href="logout.php">Logout</a><?php }else{?><a href="login.php">Login</a><?php }?></li>
+			        </ul>
+			  </div>
+ 			<div class="clear"></div>
+     			<div class="clear"></div>
+   	
+<div class="block">
+	<div class="wrap">
+		
+        <form action="process_search.php" id="reservation-form" method="post" onsubmit="myFunction()">
+		       <fieldset>
+		       	<div class="field" >
+		       	
+		       		     
+                                <input type="text" placeholder="Search Movies Here..." style="height:27px;width:300px"  required id="search111" name="search">
+                                
+                                <input type="submit" value="Search" style="height:28px;width:30px; padding-top:4px" id="button111">
+    </div>       	
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.js"></script>
-    <script src="./index.js"></script>
-	<?php
-	require 'footer.php'
-	?>
+		       </fieldset>
+            </form>
+            <div class="clear"></div>
+   </div>
 
-</body>
-
-</html>
+        </nav>
+</div>
+<script>
+function myFunction() {
+     if($('#hero-demo').val()=="")
+        {
+            alert("Please enter movie name...");
+            return false;
+        }
+    else{
+        return true;
+    }
+    </script>
+}
