@@ -21,11 +21,7 @@
 	?>
 
 	<?php 
-if(!isset($_SESSION['user']))
-{
-	header('location:login.php');
-}
-	$qry2=mysqli_query($con,"select * from tbl_movie where movie_id='".$_SESSION['movie']."'");
+	$qry2=mysqli_query($con,"select * from tbl_movie where movie_id='".$_GET['id']."'");
 	$movie=mysqli_fetch_array($qry2);
 	?>
 <div class="container movie-details">
@@ -35,7 +31,7 @@ if(!isset($_SESSION['user']))
 					<div class="desc span_3_of_2">
 						<p style="font-size:15px"><?php echo $movie['desc']; ?></p>
 						<p class="p-link" style="font-size:15px"><h5>Genre :</h5> <?php echo $movie['cast']; ?></p>
-						<p class="p-link" style="font-size:15px"><h5>Relise Date :</h5> <?php echo date('d-M-Y',strtotime($movie['release_date'])); ?></p>
+						<p class="p-link" style="font-size:15px"><h5>Rele Date :</h5> <?php echo date('d-M-Y',strtotime($movie['release_date'])); ?></p>
 						<a href="<?php echo $movie['video_url']; ?>" target="_blank" class="watch_but">Watch Trailer</a>
 					</div>
 						<div class="clear"></div>
