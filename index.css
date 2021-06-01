@@ -1,0 +1,27 @@
+.main, .main-menu{
+	background-color: #66006f;
+	padding: 10px;
+	margin: 10px;
+
+}
+body{
+	background-color: #7d0089;
+}
+.title{
+	background-color: #37003c;
+	color: white;
+	padding: 10px;
+}
+.info{
+	background-color: #4e0056;
+	color: white;
+	padding: 10px;
+}
+.image{
+	padding: 10 10 10 5;
+}
+.text{
+	padding: 20px;
+	color: white;
+}
+
