@@ -3,7 +3,9 @@ include('config.php');
 session_start();
 
 ?>
-<link rel="stylesheet" href="Main.css">
+<link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
 <nav class="navbar navbar-expand-md navbar-dark sticky-top" style="background-color: #37003c">
         <a href="Main.php">     <img src="logo.jpg" width="80" 
         height="80" alt="hi" title="next page"></a>
@@ -50,21 +52,25 @@ session_start();
             <div class="clear"></div>
                 <div class="clear"></div>
     
-<div class="block">
-    <div class="wrap">
-        
-        <form action="process_search.php" id="reservation-form" method="post" onsubmit="myFunction()">
+<div>
+                    <ul class="navbar-nav">
+        <li>
+                <form action="process_search.php" id="reservation-form" method="post" onsubmit="myFunction()">
                <fieldset>
                 <div class="field" >
                 
                          
                                 <input type="text" placeholder="Search Movies Here..." style="height:27px;width:300px"  required id="search111" name="search">
+                                <button type="submit" value="Search"  class="btn btn-info">
+    <span class="glyphicon glyphicon-search"></span> Search
+  </button>
                                 
-                                <input type="submit" value="Search" style="height:28px;width:30px; padding-top:4px" id="button111">
-    </div>          
+                                <!-- <input type="submit" value="Search" style="height:28px;width:30px; padding-top:4px" id="button111"> -->
+                 </div>          
 
                </fieldset>
             </form>
+        </li>
             <div class="clear"></div>
    </div>
 
