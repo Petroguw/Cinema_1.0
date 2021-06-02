@@ -75,9 +75,9 @@
                   </div>
                   <div class="col-md-6">
                     <div class="text">
-                        <p>Release date: <?php echo $films['release_date']; ?></p>
-                        <p>Jenre: <?php echo $films['cast']; ?></p>
-                        <p>Description: <?php echo $films['desc']; ?></p>
+                        <p><br><b>Release date:</b></br> <?php echo $films['release_date']; ?></p>
+                        <p><b>Jenre:</b></br> <?php echo $films['cast']; ?></p>
+                        <p><b>Description:</b> </br><?php echo $films['desc']; ?></p>
                     </div>
                   </div>
                 </div>
