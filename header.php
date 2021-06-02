@@ -40,32 +40,30 @@ session_start();
                </ul>
             </div>
         
-			  <div class="nav-wrap">
-					<ul class="group" id="example-one">
-
-
-			  		   <li><?php if(isset($_SESSION['user'])){
-			  		   $us=mysqli_query($con,"select * from tbl_registration where user_id='".$_SESSION['user']."'");
-        $user=mysqli_fetch_array($us);?><a href="profile.php"><?php echo $user['name'];?></a><a href="logout.php">Logout</a><?php }else{?><a href="login.php">Login</a><?php }?></li>
-			        </ul>
-			  </div>
- 			<div class="clear"></div>
-     			<div class="clear"></div>
-   	
+              <div>
+                    <ul class="navbar-nav">
+                       <li><?php if(isset($_SESSION['user'])){
+                       $us=mysqli_query($con,"select * from tbl_registration where user_id='".$_SESSION['user']."'");
+        $user=mysqli_fetch_array($us);?><a href="profile.php"><?php echo $user['name'];?></a><?php echo " ";?><a href="logout.php">Logout</a><?php }else{?><a href="login.php">Login</a><?php }?></li>
+                    </ul>
+              </div>
+            <div class="clear"></div>
+                <div class="clear"></div>
+    
 <div class="block">
-	<div class="wrap">
-		
+    <div class="wrap">
+        
         <form action="process_search.php" id="reservation-form" method="post" onsubmit="myFunction()">
-		       <fieldset>
-		       	<div class="field" >
-		       	
-		       		     
+               <fieldset>
+                <div class="field" >
+                
+                         
                                 <input type="text" placeholder="Search Movies Here..." style="height:27px;width:300px"  required id="search111" name="search">
                                 
                                 <input type="submit" value="Search" style="height:28px;width:30px; padding-top:4px" id="button111">
-    </div>       	
+    </div>          
 
-		       </fieldset>
+               </fieldset>
             </form>
             <div class="clear"></div>
    </div>
