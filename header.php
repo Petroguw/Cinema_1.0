@@ -31,16 +31,6 @@ session_start();
 
                 </div>
             </div>
-            <div>
-               <ul class="navbar-nav">
-                    <li class="nav-item mx-2">
-                        <a href="login.php" class="nav-link">Profile</a>
-                    </li>
-                    <li class="nav-item mx-2">
-                        <a href="#" target="_blank" class="nav-link">Contacts</a>
-                    </li>
-               </ul>
-            </div>
         
               <div>
                     <ul class="navbar-nav">
