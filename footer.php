@@ -39,10 +39,12 @@
 </style>
 
 <link rel="stylesheet" href="Main.css">
-<hr>
 	<footer class="align-bottom" style="background-color: #37003c;">
 		<div class="container-fluid">
       		<div class="row">
+      			<div class="col-lg-12" style="background-color: #37003c; padding: 50px;">
+          			<hr style="height:2px;border-width:0;color: white;background-color:white">
+        		</div>
       			<div class="col-lg-1"></div>
       			<div class="col-lg-2">
       				<a href=""><img src="logo_footer.png" alt="phoneicon" class="navbar-brand" style="width: 240px; padding-top: 75px;"></a>
