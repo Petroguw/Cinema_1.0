@@ -121,7 +121,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 										<td>
-											Number of Seats
+											Seats number
 										</td>
 					<td>
 						<form  action="process_booking.php" method="post">
@@ -133,7 +133,7 @@ if(!isset($_SESSION['user']))
 									</tr>
 									<tr>
 						<td>
-							Amount
+							Cost
 						</td>
 							<td id="amount" style="font-weight:bold;font-size:18px">
 								<?php echo $screen['charge'];?>
