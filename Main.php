@@ -89,3 +89,10 @@
 </body>
 
 </html>
+<script>
+window.onload = function() {
+    var element = document.createElement("script");
+    element.src = "myScript.js";
+    document.body.appendChild(element);
+};
+</script>
