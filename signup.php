@@ -37,7 +37,7 @@
         <?php $frm->validate("age",array("required","label"=>"Age","regexp"=>"age"));  ?>
       </div>
       <div class="field">
-        <select name="gender" class="form-control">
+        <select name="gender" class="field">
             <option value >Select Gender</option>
             <option>Male</option>
             <option>Female</option>
