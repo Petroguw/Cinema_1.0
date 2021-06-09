@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
 	<?php
 	require 'header.php'
 	?>
@@ -28,7 +29,8 @@ if(!isset($_SESSION['user']))
 	$qry2=mysqli_query($con,"select * from tbl_movie where movie_id='".$_SESSION['movie']."'");
 	$movie=mysqli_fetch_array($qry2);
 	?>
-<div class="container movie-details">
+	
+	<div class="container movie-details">
 	<div class="row">
 			<div class="col-md-6 left-box">
 			<h3><?php echo $movie['movie_name']; ?></h3>
