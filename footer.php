@@ -42,51 +42,51 @@
 	<footer class="align-bottom" style="background-color: #37003c;">
 		<div class="container-fluid">
       		<div class="row">
-      			<div class="col-lg-12" style="background-color: #37003c; padding: 50px;">
+      			<div class="col-lg-12 col-sm-0" style="background-color: #37003c; padding: 50px;">
           			<hr style="height:2px;border-width:0;color: white;background-color:white">
         		</div>
-      			<div class="col-lg-1"></div>
-      			<div class="col-lg-2">
+      			<div class="col-lg-1 col-sm-4"></div>
+      			<div class="col-lg-2 col-sm-4">
       				<a href=""><img src="logo_footer.png" alt="phoneicon" class="navbar-brand" style="width: 240px; padding-top: 75px;"></a>
       			</div>
-      			<div class="col-lg-2"></div>
-      			<div class="col-lg-2">
+      			<div class="col-lg-2 col-sm-4"></div>
+      			<div class="col-lg-2 col-sm-3">
       				<p class="title">RIM CINEMA</p>
       				<a href="#">Terms & Conditions<br></a>
       				<a href="#">Policies<br></a>
 					<a href="#">Cookie Policy</a>
       			</div>
-      			<div class="col-lg-2">
+      			<div class="col-lg-2 col-sm-3">
       				<p class="title">Community</p>
       				<a href="#">Films<br></a>
       				<a href="#">Media<br></a>
       				<a href="#">Booking</a>
 					</b>
       			</div>
-      			<div class="col-lg-1">
+      			<div class="col-lg-1 col-sm-3">
       				<p class="title">Company</p>
       					<a href="#">About us<br></a>
       					<a href="#">Contact us<br></a>
       					<a href="#">History</a>	
 					</b>
       			</div>	
-      			<div class="col-lg-2">
+      			<div class="col-lg-2 col-sm-3">
       				<p class="title" style="padding-top: 100px;"></p>
       				<button type="button" class="btn btn-lg">Register</button><br><br>
       				<button type="button" class="btn btn-light btn-lg">Login</button>
       			</div>
 
-      			<div class="col-lg-1"></div>
-      			<div class="col-lg-10">
+      			<div class="col-lg-1 col-sm-0"></div>
+      			<div class="col-lg-10 col-sm-12">
       				<hr style="background-color: rgba(255, 255, 255, 0.5); margin-top: 60px;">
       			</div>
-      			<div class="col-lg-1"></div>
-      			<div class="col-lg-1"></div>
-      			<div class="col-lg-2">
+      			<div class="col-lg-1 col-sm-0"></div>
+      			<div class="col-lg-1 col-sm-0"></div>
+      			<div class="col-lg-2 col-sm-5">
       				<a style="color: rgba(255, 255, 255, 0.8);"> © RIM, Inc. 2021. We love our users!</a>
       			</div>
-      			<div class="col-lg-6"></div>
-      			<div class="col-lg-3">
+      			<div class="col-lg-6 col-sm-1"></div>
+      			<div class="col-lg-3 col-sm-6">
       				<b> Follow us : </b>
       				<a href=""><img src="logos_sm/telegram.png" alt="phoneicon" class="navbar-brand" style="width: 44px;"></a>
       				<a href=""><img src="logos_sm/github.png" alt="phoneicon" class="navbar-brand" style="width: 44px;"></a>
@@ -103,5 +103,5 @@
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQsmfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
