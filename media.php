@@ -28,11 +28,15 @@
     color: white;
   }
   .brd {
-    width: 786px;
     border: 0.5px double rgba(225, 225, 225, 0.25); /* Параметры границы */
     background: #37003c; /* Цвет фона */
     padding: 50px;
    }
+   img {
+display: block;
+height: auto;
+max-width: 100%;
+}
 </style>
     
 </head>
@@ -77,7 +81,7 @@
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-5" style="background-color: #37003c;">
-          <img src="images_media/fast and the furious.png" alt="phoneicon" class="navbar-brand" style="width: 750px; height: 456px">
+          <img class="img-responsive" src="images_media/fast and the furious.png" alt="phoneicon" class="navbar-brand" style="width: 750px; height: 456px">
         </div>
         <div class="col-lg-5" style="background-color: #37003c;">
           <p class="title_media">The ninth "Fast and the Furious" came out 20 years after the first. Remember how it all began</p><br>  
@@ -107,10 +111,9 @@
           </div>   
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
-        <div class="col-lg-1" style="background-color: #37003c;"></div>
-        <div class="col-lg-5" style="background-color: #37003c;">
+        <div class="col-lg-6 col-md-12 col-sm-12" style="background-color: #37003c;">
           <div class="brd">
-            <img src="images_media/In Search of Love.png" alt="phoneicon" class="navbar-brand" style="width: 686px; height: 400px">
+            <img class="img-responsive" src="images_media/In Search of Love.png" alt="phoneicon" class="navbar-brand" style="">
             <center>
                <p class="title_media">The series "In Search of Love"</p>  
               <b>An ironic look at England in the 1920s and 1930s and its arrogant aristocracy</b>
@@ -118,16 +121,15 @@
           </div>
 
         </div>
-        <div class="col-lg-5" style="background-color: #37003c;">
+        <div class="col-lg-6 col-md-12 col-sm-12" style="background-color: #37003c;">
           <div class="brd">
-            <img src="images_media/tom.png" alt="phoneicon" class="navbar-brand" style="width: 686px; height: 400px">
+            <img class="img-responsive" src="images_media/tom.png" alt="phoneicon" class="navbar-brand" style="">
             <center>
                <p class="title_media">Downhill with Tom Holland</p>  
               <b>How the directors of "The Avengers" wanted to shoot a drama, but they shot a comic</b>
             </center>
           </div>
         </div>
-        <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-12" style="background-color: #37003c; padding: 50px;">
           <hr style="height:2px;border-width:0;color: white;background-color:white">
         </div>
@@ -139,38 +141,36 @@
           </div>   
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
-        <div class="col-lg-1" style="background-color: #37003c;"></div>
-        <div class="col-lg-3" style="background-color: #37003c;">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background-color: #37003c;">
           <center>
-          <div class="brd" style="width: 490px; padding: 30px">
-            <img src="images_media/One More.png" alt="phoneicon" class="navbar-brand" style="width: 429px; height: 275px">
+          <div class="brd">
+            <img src="images_media/One More.png" alt="phoneicon" class="navbar-brand">
             <center>
                <p class="title_media">Leonardo DiCaprio will star in the remake of One More</p>  
             </center>
           </div>
           </center>
         </div>
-        <div class="col-lg-4" style="background-color: #37003c;">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background-color: #37003c;">
           <center>
-          <div class="brd" style="width: 490px; padding: 30px;">
-            <img src="images_media/statham.png" alt="phoneicon" class="navbar-brand" style="width: 429px; height: 275px">
+          <div class="brd">
+            <img src="images_media/statham.png" alt="phoneicon" class="navbar-brand">
             <center>
                <p class="title_media">China and Guy Ritchie set records, America comes alive</p>
             </center>
           </div>
         </center>
         </div>
-        <div class="col-lg-3" style="background-color: #37003c;">
+        <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background-color: #37003c;">
           <center>
-          <div class="brd" style="width: 490px; padding: 30px;">
-            <img src="images_media/friends.png" alt="phoneicon" class="navbar-brand" style="width: 429px; height: 275px">
+          <div class="brd">
+            <img src="images_media/friends.png" alt="phoneicon" class="navbar-brand">
             <center>
                <p class="title_media">The Friends final came out 17 years ago. How did you say goodbye to the sitcom?</p>  
             </center>
           </div>
           </center>
-        </div>
-        <div class="col-lg-1" style="background-color: #37003c;"></div>        
+        </div>        
       </div>
   </div>
   <?php require 'footer.php' ?>
