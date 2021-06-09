@@ -38,7 +38,7 @@
 	}
 </style>
 
-<link rel="stylesheet" href="footer.css">
+<link rel="stylesheet" href="Main.css">
 	<footer class="align-bottom" style="background-color: #37003c;">
 		<div class="container-fluid">
       		<div class="row">
