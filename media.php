@@ -21,7 +21,7 @@
   .title_media{
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 28px;
     line-height: 24px;
     padding-top: 120px;
     letter-spacing: 0.05em;
@@ -81,11 +81,11 @@ max-width: 100%;
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-5" style="background-color: #37003c;">
-          <img class="img-responsive" src="images_media/fast and the furious.png" alt="phoneicon" class="navbar-brand" style="width: 750px; height: 456px">
+          <a href="Media.php"><img class="img-responsive" src="images_media/fast and the furious.png" alt="phoneicon" class="navbar-brand" style="width: 750px; height: 456px"></a>
         </div>
         <div class="col-lg-5" style="background-color: #37003c;">
-          <p class="title_media">The ninth "Fast and the Furious" came out 20 years after the first. Remember how it all began</p><br>  
-              <b>The next sequel to The Fast and the Furious is being released in cinemas. It reveals that the driver, special agent and family man Dominic Toretto has a brother, Jacob, whom he never talked about. The ninth part contains many references to the very first film in the franchise, which turns 20 this year.</b>
+          <center><a class="title_media" href="Media.php">The ninth "Fast and the Furious" came out 20 years after the first. Remember how it all began</a><br><br><br>  
+              <b>The next sequel to The Fast and the Furious is being released in cinemas. It reveals that the driver, special agent and family man Dominic Toretto has a brother, Jacob, whom he never talked about. The ninth part contains many references to the very first film in the franchise, which turns 20 this year.</b></center>
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-12" style="background-color: #37003c; padding: 50px;">
@@ -93,11 +93,11 @@ max-width: 100%;
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-5" style="background-color: #37003c;">
-          <p class="title_media">How was the Oscar-2021 ceremony and what its script and winners say</p><br>  
-              <b>Vasily Stepanov comments on the choice of academics, the speeches of the speakers and the general mood of the most relaxed Oscar in history.</b>
+          <center><a class="title_media" href="Media.php">How was the Oscar-2021 ceremony and what its script and winners say</a><br><br><br>  
+              <b>Vasily Stepanov comments on the choice of academics, the speeches of the speakers and the general mood of the most relaxed Oscar in history.</b></center>
         </div>
         <div class="col-lg-5" style="background-color: #37003c;">
-          <img src="images_media/oscar.png" alt="phoneicon" class="navbar-brand" style="width: 750px; height: 456px">
+          <a href="Media.php"><img src="images_media/oscar.png" alt="phoneicon" class="navbar-brand" style="width: 750px; height: 456px"></a>
         </div>
         <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-12" style="background-color: #37003c; padding: 50px;">
@@ -113,9 +113,9 @@ max-width: 100%;
         <div class="col-lg-1" style="background-color: #37003c;"></div>
         <div class="col-lg-6 col-md-12 col-sm-12" style="background-color: #37003c;">
           <div class="brd">
-            <img class="img-responsive" src="images_media/In Search of Love.png" alt="phoneicon" class="navbar-brand" style="">
+            <a href="Media.php"><img class="img-responsive" src="images_media/In Search of Love.png" alt="phoneicon" class="navbar-brand" style=""></a>
             <center>
-               <p class="title_media">The series "In Search of Love"</p>  
+               <a class="title_media" href="Media.php">The series "In Search of Love"</a>  <br><br><br>
               <b>An ironic look at England in the 1920s and 1930s and its arrogant aristocracy</b>
             </center>
           </div>
@@ -123,9 +123,9 @@ max-width: 100%;
         </div>
         <div class="col-lg-6 col-md-12 col-sm-12" style="background-color: #37003c;">
           <div class="brd">
-            <img class="img-responsive" src="images_media/tom.png" alt="phoneicon" class="navbar-brand" style="">
+            <a href="Media.php"><img class="img-responsive" src="images_media/tom.png" alt="phoneicon" class="navbar-brand" style=""></a>
             <center>
-               <p class="title_media">Downhill with Tom Holland</p>  
+               <a class="title_media" href="Media.php">Downhill with Tom Holland</a>  <br><br><br>
               <b>How the directors of "The Avengers" wanted to shoot a drama, but they shot a comic</b>
             </center>
           </div>
@@ -144,19 +144,19 @@ max-width: 100%;
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background-color: #37003c;">
           <center>
           <div class="brd">
-            <img src="images_media/One More.png" alt="phoneicon" class="navbar-brand">
+            <a href="Media.php"><img src="images_media/One More.png" alt="phoneicon" class="navbar-brand"></a>
             <center>
-               <p class="title_media">Leonardo DiCaprio will star in the remake of One More</p>  
+               <a class="title_media" href="Media.php">Leonardo DiCaprio will star in the remake of One More</a>  
             </center>
           </div>
           </center>
         </div>
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background-color: #37003c;">
           <center>
-          <div class="brd">
-            <img src="images_media/statham.png" alt="phoneicon" class="navbar-brand">
+          <div class="brd" >
+            <a href="Media.php"><img src="images_media/statham.png" alt="phoneicon" class="navbar-brand"></a>
             <center>
-               <p class="title_media">China and Guy Ritchie set records, America comes alive</p>
+               <a class="title_media" href="Media.php">China and Guy Ritchie set records, America comes alive</a>
             </center>
           </div>
         </center>
@@ -164,9 +164,9 @@ max-width: 100%;
         <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12" style="background-color: #37003c;">
           <center>
           <div class="brd">
-            <img src="images_media/friends.png" alt="phoneicon" class="navbar-brand">
+            <a href="Media.php"><img src="images_media/friends.png" alt="phoneicon" class="navbar-brand"></a>
             <center>
-               <p class="title_media">The Friends final came out 17 years ago. How did you say goodbye to the sitcom?</p>  
+               <a class="title_media" href="Media.php">The Friends final came out 17 years ago. How did you say goodbye to the sitcom?</a>  
             </center>
           </div>
           </center>
