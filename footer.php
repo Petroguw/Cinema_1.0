@@ -58,9 +58,9 @@
       			</div>
       			<div class="col-lg-2 col-sm-3">
       				<p class="title">Community</p>
-      				<a href="#">Films<br></a>
-      				<a href="#">Media<br></a>
-      				<a href="#">Booking</a>
+      				<a href="index.php">Films<br></a>
+      				<a href="media.php">Media<br></a>
+      				<a href="booking.php">Booking</a>
 					</b>
       			</div>
       			<div class="col-lg-1 col-sm-3">
@@ -72,8 +72,8 @@
       			</div>	
       			<div class="col-lg-2 col-sm-3">
       				<p class="title" style="padding-top: 100px;"></p>
-      				<button type="button" class="btn btn-lg">Register</button><br><br>
-      				<button type="button" class="btn btn-light btn-lg">Login</button>
+      				<a href="singup.php"><button type="button" class="btn btn-lg">Register</button></a><br><br>
+      				<a href="login.php"><button type="button" class="btn btn-light btn-lg">Login</button></a>
       			</div>
 
       			<div class="col-lg-1 col-sm-0"></div>
